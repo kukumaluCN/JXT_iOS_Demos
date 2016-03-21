@@ -1,0 +1,326 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A7237AC81C8C1855007994F3 /* VerifyNumberView.m in Sources */ = {isa = PBXBuildFile; fileRef = A7237AC71C8C1855007994F3 /* VerifyNumberView.m */; };
+		A79150F71C8B2C4F00EF3690 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A79150F61C8B2C4F00EF3690 /* main.m */; };
+		A79150FA1C8B2C4F00EF3690 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A79150F91C8B2C4F00EF3690 /* AppDelegate.m */; };
+		A79151021C8B2C4F00EF3690 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A79151011C8B2C4F00EF3690 /* Assets.xcassets */; };
+		A79151051C8B2C4F00EF3690 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A79151031C8B2C4F00EF3690 /* LaunchScreen.storyboard */; };
+		A791510E1C8B2DE700EF3690 /* JXTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A791510D1C8B2DE700EF3690 /* JXTViewController.m */; };
+		A79151111C8B2F0800EF3690 /* JXTAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = A79151101C8B2F0800EF3690 /* JXTAlertView.m */; };
+		A7FCD5551C8D878F00E6A7DF /* JXTAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7FCD5541C8D878F00E6A7DF /* JXTAlertViewController.m */; };
+		A7FCD5581C8DC94400E6A7DF /* MyNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7FCD5571C8DC94400E6A7DF /* MyNavigationController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A7237AC61C8C1855007994F3 /* VerifyNumberView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerifyNumberView.h; sourceTree = "<group>"; };
+		A7237AC71C8C1855007994F3 /* VerifyNumberView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerifyNumberView.m; sourceTree = "<group>"; };
+		A79150F21C8B2C4F00EF3690 /* JXTAlertView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JXTAlertView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A79150F61C8B2C4F00EF3690 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A79150F81C8B2C4F00EF3690 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A79150F91C8B2C4F00EF3690 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A79151011C8B2C4F00EF3690 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A79151041C8B2C4F00EF3690 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A79151061C8B2C4F00EF3690 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A791510C1C8B2DE700EF3690 /* JXTViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXTViewController.h; sourceTree = "<group>"; };
+		A791510D1C8B2DE700EF3690 /* JXTViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXTViewController.m; sourceTree = "<group>"; };
+		A791510F1C8B2F0800EF3690 /* JXTAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXTAlertView.h; sourceTree = "<group>"; };
+		A79151101C8B2F0800EF3690 /* JXTAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXTAlertView.m; sourceTree = "<group>"; };
+		A7FCD5531C8D878F00E6A7DF /* JXTAlertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXTAlertViewController.h; sourceTree = "<group>"; };
+		A7FCD5541C8D878F00E6A7DF /* JXTAlertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXTAlertViewController.m; sourceTree = "<group>"; };
+		A7FCD5561C8DC94400E6A7DF /* MyNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyNavigationController.h; sourceTree = "<group>"; };
+		A7FCD5571C8DC94400E6A7DF /* MyNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyNavigationController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A79150EF1C8B2C4F00EF3690 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A7237AC91C8C3D8D007994F3 /* JXTLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				A791510F1C8B2F0800EF3690 /* JXTAlertView.h */,
+				A79151101C8B2F0800EF3690 /* JXTAlertView.m */,
+				A7FCD5531C8D878F00E6A7DF /* JXTAlertViewController.h */,
+				A7FCD5541C8D878F00E6A7DF /* JXTAlertViewController.m */,
+				A7237AC61C8C1855007994F3 /* VerifyNumberView.h */,
+				A7237AC71C8C1855007994F3 /* VerifyNumberView.m */,
+			);
+			name = JXTLibrary;
+			sourceTree = "<group>";
+		};
+		A79150E91C8B2C4F00EF3690 = {
+			isa = PBXGroup;
+			children = (
+				A79150F41C8B2C4F00EF3690 /* JXTAlertView */,
+				A79150F31C8B2C4F00EF3690 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A79150F31C8B2C4F00EF3690 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A79150F21C8B2C4F00EF3690 /* JXTAlertView.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A79150F41C8B2C4F00EF3690 /* JXTAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				A79150F81C8B2C4F00EF3690 /* AppDelegate.h */,
+				A79150F91C8B2C4F00EF3690 /* AppDelegate.m */,
+				A791510C1C8B2DE700EF3690 /* JXTViewController.h */,
+				A791510D1C8B2DE700EF3690 /* JXTViewController.m */,
+				A7FCD5561C8DC94400E6A7DF /* MyNavigationController.h */,
+				A7FCD5571C8DC94400E6A7DF /* MyNavigationController.m */,
+				A7237AC91C8C3D8D007994F3 /* JXTLibrary */,
+				A79151011C8B2C4F00EF3690 /* Assets.xcassets */,
+				A79151031C8B2C4F00EF3690 /* LaunchScreen.storyboard */,
+				A79151061C8B2C4F00EF3690 /* Info.plist */,
+				A79150F51C8B2C4F00EF3690 /* Supporting Files */,
+			);
+			path = JXTAlertView;
+			sourceTree = "<group>";
+		};
+		A79150F51C8B2C4F00EF3690 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A79150F61C8B2C4F00EF3690 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A79150F11C8B2C4F00EF3690 /* JXTAlertView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A79151091C8B2C4F00EF3690 /* Build configuration list for PBXNativeTarget "JXTAlertView" */;
+			buildPhases = (
+				A79150EE1C8B2C4F00EF3690 /* Sources */,
+				A79150EF1C8B2C4F00EF3690 /* Frameworks */,
+				A79150F01C8B2C4F00EF3690 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JXTAlertView;
+			productName = JXTAlertView;
+			productReference = A79150F21C8B2C4F00EF3690 /* JXTAlertView.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A79150EA1C8B2C4F00EF3690 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = JXT;
+				TargetAttributes = {
+					A79150F11C8B2C4F00EF3690 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = A79150ED1C8B2C4F00EF3690 /* Build configuration list for PBXProject "JXTAlertView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A79150E91C8B2C4F00EF3690;
+			productRefGroup = A79150F31C8B2C4F00EF3690 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A79150F11C8B2C4F00EF3690 /* JXTAlertView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A79150F01C8B2C4F00EF3690 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A79151051C8B2C4F00EF3690 /* LaunchScreen.storyboard in Resources */,
+				A79151021C8B2C4F00EF3690 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A79150EE1C8B2C4F00EF3690 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7FCD5551C8D878F00E6A7DF /* JXTAlertViewController.m in Sources */,
+				A7FCD5581C8DC94400E6A7DF /* MyNavigationController.m in Sources */,
+				A791510E1C8B2DE700EF3690 /* JXTViewController.m in Sources */,
+				A79150FA1C8B2C4F00EF3690 /* AppDelegate.m in Sources */,
+				A79151111C8B2F0800EF3690 /* JXTAlertView.m in Sources */,
+				A7237AC81C8C1855007994F3 /* VerifyNumberView.m in Sources */,
+				A79150F71C8B2C4F00EF3690 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A79151031C8B2C4F00EF3690 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A79151041C8B2C4F00EF3690 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A79151071C8B2C4F00EF3690 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A79151081C8B2C4F00EF3690 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A791510A1C8B2C4F00EF3690 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JXTAlertView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-.JXTAlertView";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A791510B1C8B2C4F00EF3690 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JXTAlertView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-.JXTAlertView";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A79150ED1C8B2C4F00EF3690 /* Build configuration list for PBXProject "JXTAlertView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A79151071C8B2C4F00EF3690 /* Debug */,
+				A79151081C8B2C4F00EF3690 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A79151091C8B2C4F00EF3690 /* Build configuration list for PBXNativeTarget "JXTAlertView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A791510A1C8B2C4F00EF3690 /* Debug */,
+				A791510B1C8B2C4F00EF3690 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A79150EA1C8B2C4F00EF3690 /* Project object */;
+}
