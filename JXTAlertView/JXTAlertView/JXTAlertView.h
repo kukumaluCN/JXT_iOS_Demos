@@ -7,7 +7,7 @@
 //
 //
 //  ***
-//  *   GitHub:https://github.com/kukumaluCN/Demo_JXTAlertView
+//  *   GitHub:https://github.com/kukumaluCN/JXT_iOS_Demos/tree/master
 //  *   博客:http://www.jianshu.com/users/c8f8558a4b1d/latest_articles
 //  *   邮箱:1145049339@qq.com
 //  ***
