@@ -1,5 +1,5 @@
 # JXT_iOS_Demos
-一些相关的iOS的Demo汇总
+一些iOS相关的测试Demo汇总
 
 ## 2017.1.12 DelegateOptimizeTest
 利用位段（位域）优化协议方法回调，提升性能。
