@@ -4,6 +4,9 @@
 ## 2017.1.12 DelegateOptimizeTest
 利用位段（位域）优化协议方法回调，提升性能。
 
+## 2017.1.9 NSErrorTest
+关于NSError的一些简单使用场景，探索error作为输出参数（NSError**）的使用原理。
+
 ## 2016.9.25 CAAnimationDelegateTest 
 iOS10  CAAnimationDelegate的“适配”  
 博文：  
