@@ -1,4 +1,4 @@
-# JXT_iOS_Demos
+# JXT\_iOS\_Demos
 一些iOS相关的测试Demo汇总
 
 ## 2017.1.12 DelegateOptimizeTest
@@ -6,6 +6,11 @@
 
 ## 2017.1.9 NSErrorTest
 关于NSError的一些简单使用场景，探索error作为输出参数（NSError**）的使用原理。
+
+## 2017.1.6 KVCTest
+一些关于KVC的简单实用  
+参考博文（作者Lision）：  
+[有趣的KVC－几行代码打造一个万能容器对象](http://www.jianshu.com/p/ad2d6681630e)
 
 ## 2016.9.25 CAAnimationDelegateTest 
 iOS10  CAAnimationDelegate的“适配”  
