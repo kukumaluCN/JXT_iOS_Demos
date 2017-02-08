@@ -1,6 +1,11 @@
 # JXT\_iOS\_Demos
 一些iOS相关的测试Demo汇总
 
+## 2017.2.8 Quartz2DDemo
+Quartz2D简单入门，一些绘图的基本方法。  
+博文参考：  
+[iOS Quartz2D详解](http://www.imlifengfeng.com/blog/?p=514#comment-127)
+
 ## 2017.1.20 CategoryDelegateUnsafeTest
 在分类中添加系统API对应的协议方法是不安全的。  
 系统API实现有可能使用这种做法，如果开发者在同样的类的分类中添加了和系统同样的协议方法，就造成了冲突，表现就是，开发者后添加的分类文件中的协议实现会覆盖系统的实现，造成不可预计的bug，例如WKWebView的点击是以tap手势实现，如果开发者在UIView的分类中也实现了tap手势的对应协议方法，就覆盖了系统的实现，造成WKWebView不能正常工作。
