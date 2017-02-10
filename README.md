@@ -1,9 +1,17 @@
 # JXT\_iOS\_Demos
 一些iOS相关的测试Demo汇总
 
+## 2017.2.10 ThreadArrayTest  
+关于多线程操作数组的安全性问题，关于多线程的几种使用方式的测试。  
+参考博文：  
+1.[如何实现一个线程安全的NSMutabeArray，以保证多个线程对数组操作（遍历，插入，删除）的安全？](https://www.zhihu.com/question/35590962)  
+2.[iOS 线程安全之@synchronized的用法](http://www.cnblogs.com/jukaiit/p/5570056.html)  
+3.[iOS线程安全数组](http://blog.csdn.net/idaretobe/article/details/22191103)  
+4.[iOS开发多线程之队列组——下载合并图片](http://blog.csdn.net/sunnyboy9/article/details/44893563)  
+
 ## 2017.2.8 Quartz2DDemo
 Quartz2D简单入门，一些绘图的基本方法。  
-博文参考：  
+参考博文：  
 [iOS Quartz2D详解](http://www.imlifengfeng.com/blog/?p=514#comment-127)
 
 ## 2017.1.20 CategoryDelegateUnsafeTest
