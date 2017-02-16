@@ -1,6 +1,12 @@
 # JXT\_iOS\_Demos
 一些iOS相关的测试Demo汇总
 
+## 2017.2.16 ChildViewControllerTest  
+关于ChildViewController的简单使用。  
+参考博文：  
+1.[iOS 5.0 后UIViewController新增：willMoveToParentViewController和didMoveToParentViewController](http://blog.sina.com.cn/s/blog_7b9d64af0101d6p7.html)  
+2.[iOS开发 剖析网易新闻标签栏视图切换(addChildViewController属性介绍)](http://blog.csdn.net/hmt20130412/article/details/34523235)
+
 ## 2017.2.10 ThreadArrayTest  
 关于多线程操作数组的安全性问题，关于多线程的几种使用方式的测试。  
 参考博文：  
