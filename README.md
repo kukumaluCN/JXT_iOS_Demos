@@ -1,6 +1,11 @@
 # JXT\_iOS\_Demos
 一些iOS相关的测试Demo汇总
 
+## 2017.3.2 MVCDemo  
+运用MVC架构，将TableView和VC解耦的一次尝试，将DataSource从VC分离。将参考文章中的方案做了调整。  
+参考博文：  
+[更轻量的 View Controllers](https://objccn.io/issue-1-1/)
+
 ## 2017.2.16 ChildViewControllerTest  
 关于ChildViewController的简单使用。  
 参考博文：  

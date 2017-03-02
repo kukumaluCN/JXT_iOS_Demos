@@ -57,7 +57,11 @@
 {
     [super viewDidDisappear:animated];
     
-    if (![self.navigationController.viewControllers containsObject:self])//等效[self.navigationController.viewControllers indexOfObject:self] == NSNotFound
+    //self.navigationController == nil
+    NSLog(@"viewDidDisappear-%@", self.navigationController.viewControllers);
+    
+    if (!self.navigationController || ![self.navigationController.viewControllers containsObject:self])
+//    if (![self.navigationController.viewControllers containsObject:self])//等效[self.navigationController.viewControllers indexOfObject:self] == NSNotFound
     {
         [self executeDelegateMethods];
     }
