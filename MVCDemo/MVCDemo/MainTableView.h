@@ -37,7 +37,6 @@
 
 
 @interface MainTableView (TableFooterViewMethods)
-
 /**
  加载失败列表样式显示
  
