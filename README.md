@@ -1,6 +1,12 @@
 # JXT\_iOS\_Demos
 一些iOS相关的测试Demo汇总
 
+## 2017.3.4 JXT\_MVC\_Demo 
+- **JXTDataModelManager**   
+使用`UIView`的分类扩展属性`jxt_dataModel`和方法`jxt_reloadData`，令所有`UIView`动态绑定对应的数据模型属性，`UIView`子类重写`jxt_reloadData`方法，在`jxt_dataModel`执行`set`时，会自动回调该方法，从而进行数据UI显示刷新。  
+- **BaseTableArrayDataSource**  
+将TableView和VC解耦的一次尝试，将DataSource从VC分离，实现单独的代理类，运用OC的多态特性，动态为对应`TableViewCell`类实现数据源协议，并动态绑定数据，刷新数据。
+
 ## 2017.3.3 CategoryDuplicationProperty  
 使用系统的分类扩展自己的属性和方法时，命名一定要注意规范，一定要添加自己对应的前缀作为“命名空间”标识，即使是不同类的属性也不可和系统属性重名，否则会直接覆盖系统属性或方法，常规的UI层的覆盖可能产生直观的bug易于查找，但是数据层的，就是很难查找的隐患了。
 
