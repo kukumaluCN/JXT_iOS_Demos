@@ -10,7 +10,7 @@
 
 #import <Foundation/Foundation.h>
 
-#import "UIView+JXTDataModelManager.h"
+#import "UIResponder+JXTDataModelManager.h"
 
 @interface BaseModel : NSObject
 

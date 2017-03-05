@@ -27,8 +27,10 @@
 {
     [super viewDidLoad];
     
-    self.navigationItem.title = self.subMainModel.title;
     self.view.backgroundColor = [UIColor whiteColor];
+    
+    SubMainModel *subMainModel = self.jxt_forwardDataModel;
+    self.navigationItem.title = subMainModel.title;
 }
 
 - (void)didReceiveMemoryWarning {

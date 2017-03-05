@@ -10,7 +10,7 @@
 
 #import "BaseTableArrayDataSource.h"
 
-#import "UIView+JXTDataModelManager.h"
+#import "UIResponder+JXTDataModelManager.h"
 
 static NSString *const kBaseTableViewCellId = @"baseTableViewCellId";
 
@@ -78,7 +78,7 @@ static NSString *const kBaseTableViewCellId = @"baseTableViewCellId";
         }
         
         if (self.dataArray.count > 0) {
-            cell.jxt_dataModel = self.dataArray[indexPath.row];
+            [cell jxt_setCallbackDataModel:self.dataArray[indexPath.row]];
         }
         
         return cell;

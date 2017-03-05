@@ -80,16 +80,17 @@
 
 
 #pragma mark - DataSource
-- (void)jxt_reloadData
+- (void)jxt_refreshUIWithCallbackDataModel:(id)callbackDataModel
 {
-    MainModel *mainModel = self.jxt_dataModel;
+    MainModel *mainModel = callbackDataModel;
     self.headerView.text = mainModel.headUrl;
     self.titleLabel.text = mainModel.nameText;
     
     self.headerView.backgroundColor = [UIColor redColor];
     self.titleLabel.backgroundColor = [UIColor greenColor];
     
-    [self jxt_updateLayoutImmediately];
+    [self setNeedsLayout];
+    [self layoutIfNeeded];
 }
 
 @end

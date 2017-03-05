@@ -10,9 +10,6 @@
 
 #import "BaseViewController.h"
 
-@class SubMainModel;
 @interface DetailViewController : BaseViewController
-
-@property (nonatomic, strong) SubMainModel * subMainModel;
 
 @end

@@ -22,7 +22,6 @@
 
 
 
-@class MainModel;
 @interface MainTableView (ConfigDataForTableView)
 /**
  获取对应indexPath的cell的数据源模型

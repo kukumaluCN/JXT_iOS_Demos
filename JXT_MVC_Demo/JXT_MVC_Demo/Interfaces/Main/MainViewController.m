@@ -77,7 +77,8 @@
     
     DetailViewController *detailVC = [[DetailViewController alloc] init];
     UINavigationController *nvc = [[UINavigationController alloc] initWithRootViewController:detailVC];
-    detailVC.subMainModel = [self.mainTableView cellDataModelAtIndexPath:indexPath];
+//    detailVC.subMainModel = [self.mainTableView cellDataModelAtIndexPath:indexPath];
+    detailVC.jxt_forwardDataModel = [self.mainTableView cellDataModelAtIndexPath:indexPath];
     [self presentViewController:nvc animated:YES completion:NULL];
 }
 
@@ -94,7 +95,7 @@
             {
                 failureCount = 0;
                 MainModel *mainModel = responseData;
-                self.mainTableView.jxt_dataModel = mainModel;
+                [self.mainTableView jxt_setCallbackDataModel:mainModel];
             }
             else
             {

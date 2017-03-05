@@ -90,11 +90,11 @@
 
 @implementation MainTableView (ConfigDataForTableView)
 
-- (void)jxt_reloadData
+- (void)jxt_refreshUIWithCallbackDataModel:(id)callbackDataModel
 {
-    MainModel *mainModel = self.jxt_dataModel;
+    MainModel *mainModel = callbackDataModel;
     //头
-    self.mainTableHeaderView.jxt_dataModel = mainModel;
+    [self.mainTableHeaderView jxt_setCallbackDataModel:mainModel];
     //尾
     [self.mainTableFooterView loadSuccess];
     self.tableFooterView = nil;

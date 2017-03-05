@@ -25,7 +25,7 @@
 		A7E5438D1E697BFA000A7AF5 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7E5437B1E697BFA000A7AF5 /* MainViewController.m */; };
 		A7E5438E1E697BFA000A7AF5 /* BaseNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A7E5437F1E697BFA000A7AF5 /* BaseNetworkManager.m */; };
 		A7E543AB1E69E9A9000A7AF5 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7E543AA1E69E9A9000A7AF5 /* LoginViewController.m */; };
-		A7E543B11E69ED6C000A7AF5 /* UIView+JXTDataModelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A7E543B01E69ED6C000A7AF5 /* UIView+JXTDataModelManager.m */; };
+		A7E543BA1E6C05D7000A7AF5 /* UIResponder+JXTDataModelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A7E543B91E6C05D7000A7AF5 /* UIResponder+JXTDataModelManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,8 +64,8 @@
 		A7E5437F1E697BFA000A7AF5 /* BaseNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNetworkManager.m; sourceTree = "<group>"; };
 		A7E543A91E69E9A9000A7AF5 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		A7E543AA1E69E9A9000A7AF5 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
-		A7E543AF1E69ED6C000A7AF5 /* UIView+JXTDataModelManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JXTDataModelManager.h"; sourceTree = "<group>"; };
-		A7E543B01E69ED6C000A7AF5 /* UIView+JXTDataModelManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JXTDataModelManager.m"; sourceTree = "<group>"; };
+		A7E543B81E6C05D7000A7AF5 /* UIResponder+JXTDataModelManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIResponder+JXTDataModelManager.h"; sourceTree = "<group>"; };
+		A7E543B91E6C05D7000A7AF5 /* UIResponder+JXTDataModelManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+JXTDataModelManager.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,8 +146,8 @@
 			children = (
 				A7E5435E1E697BFA000A7AF5 /* BaseModel.h */,
 				A7E5435F1E697BFA000A7AF5 /* BaseModel.m */,
-				A7E543AF1E69ED6C000A7AF5 /* UIView+JXTDataModelManager.h */,
-				A7E543B01E69ED6C000A7AF5 /* UIView+JXTDataModelManager.m */,
+				A7E543B81E6C05D7000A7AF5 /* UIResponder+JXTDataModelManager.h */,
+				A7E543B91E6C05D7000A7AF5 /* UIResponder+JXTDataModelManager.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -341,6 +341,7 @@
 				A7E543811E697BFA000A7AF5 /* BaseViewController.m in Sources */,
 				A7E5438D1E697BFA000A7AF5 /* MainViewController.m in Sources */,
 				A7E5438A1E697BFA000A7AF5 /* MainTableHeaderView.m in Sources */,
+				A7E543BA1E6C05D7000A7AF5 /* UIResponder+JXTDataModelManager.m in Sources */,
 				A7E543871E697BFA000A7AF5 /* MainModel.m in Sources */,
 				A7E543861E697BFA000A7AF5 /* DetailViewController.m in Sources */,
 				A7E5438E1E697BFA000A7AF5 /* BaseNetworkManager.m in Sources */,
@@ -350,7 +351,6 @@
 				A7E543891E697BFA000A7AF5 /* MainTableFooterView.m in Sources */,
 				A7E543AB1E69E9A9000A7AF5 /* LoginViewController.m in Sources */,
 				A7E543801E697BFA000A7AF5 /* BaseNavigationViewController.m in Sources */,
-				A7E543B11E69ED6C000A7AF5 /* UIView+JXTDataModelManager.m in Sources */,
 				A7E543821E697BFA000A7AF5 /* BaseModel.m in Sources */,
 				A7E543421E697BA5000A7AF5 /* main.m in Sources */,
 			);

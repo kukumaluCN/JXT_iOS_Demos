@@ -28,13 +28,14 @@
 
 
 #pragma mark - DataSource
-- (void)jxt_reloadData
+- (void)jxt_refreshUIWithCallbackDataModel:(id)callbackDataModel
 {
-    SubMainModel *subModel = self.jxt_dataModel;
+    SubMainModel *subModel = callbackDataModel;
     self.textLabel.text = subModel.order.stringValue;
     self.detailTextLabel.text = subModel.title;
     
-    [self jxt_updateLayoutImmediately];
+    [self setNeedsLayout];
+    [self layoutIfNeeded];
 }
 
 @end
