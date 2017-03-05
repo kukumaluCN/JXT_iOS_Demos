@@ -102,7 +102,6 @@
 				A7E543441E697BA5000A7AF5 /* AppDelegate.m */,
 				A7E543571E697BFA000A7AF5 /* BaseClasses */,
 				A7E543691E697BFA000A7AF5 /* Interfaces */,
-				A7E543681E697BFA000A7AF5 /* DataManagers */,
 				A7E5437C1E697BFA000A7AF5 /* ThirdLibrary */,
 				A7E5434C1E697BA5000A7AF5 /* Assets.xcassets */,
 				A7E5434E1E697BA5000A7AF5 /* LaunchScreen.storyboard */,
@@ -159,13 +158,6 @@
 				A7E543651E697BFA000A7AF5 /* BaseTableArrayDataSource.m */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		A7E543681E697BFA000A7AF5 /* DataManagers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = DataManagers;
 			sourceTree = "<group>";
 		};
 		A7E543691E697BFA000A7AF5 /* Interfaces */ = {

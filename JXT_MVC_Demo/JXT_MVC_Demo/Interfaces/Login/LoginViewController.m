@@ -39,6 +39,8 @@
 #pragma mark - UI and Layout
 - (void)setupBaseUI
 {
+    self.navigationItem.title = @"登录";
+    
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 200, 40)];
     label.center = CGPointMake(self.view.bounds.size.width*0.5, self.view.bounds.size.height*0.5);
     label.font = [UIFont systemFontOfSize:20];

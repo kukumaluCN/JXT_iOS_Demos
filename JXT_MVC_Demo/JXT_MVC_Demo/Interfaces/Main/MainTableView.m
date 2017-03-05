@@ -102,7 +102,7 @@
     //先替换表数据源
     [self.mainDataSource setCellDataArray:mainModel.listDatas];
     
-    //后刷新协议方法
+    //后刷新dataSource协议方法
     [super reloadData];
 }
 

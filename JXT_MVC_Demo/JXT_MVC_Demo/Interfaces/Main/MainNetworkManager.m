@@ -40,18 +40,18 @@
         if (!completion) {
             NSAssert(NO, @"completion can not be NULL!");
         }
-        if (aError == nil && MVC_NOT_NULL_OR_EMPTY_OF_DICTIONARY(retDict)) //应该是responseData，这里是伪数据源
+        if (aError == nil && JXT_NOT_NULL_OR_EMPTY_OF_DICTIONARY(retDict)) //应该是responseData，这里是伪数据源
         {
             //数据解析
             MainModel *mainModel = [MainModel modelWithDict:retDict];
             
             if (mainModel)
             {
-                //错误处理根据业务场景，尽量在本类完成提示逻辑，和vc无关
                 completion(mainModel, nil);
             }
             else
             {
+                //错误处理根据业务场景，单纯的toast提示逻辑尽量在本类完成，和vc无关
                 completion(nil, BaseNetworkError(absoluteUrlString, NSURLErrorCannotDecodeContentData, nil));
                 NSLog(@"弹窗提示：mainModel==nil");
             }

@@ -10,8 +10,8 @@
 
 #import <Foundation/Foundation.h>
 
-#define MVC_NOT_NULL_OR_EMPTY_OF_ARRAY(_ARRAY___) (_ARRAY___ && [_ARRAY___ isKindOfClass:[NSArray class]] && [_ARRAY___ count])
-#define MVC_NOT_NULL_OR_EMPTY_OF_DICTIONARY(_DICTIONARY___) (_DICTIONARY___ && [_DICTIONARY___ isKindOfClass:[NSDictionary class]] && [_DICTIONARY___ count])
+#define JXT_NOT_NULL_OR_EMPTY_OF_ARRAY(_ARRAY___) (_ARRAY___ && [_ARRAY___ isKindOfClass:[NSArray class]] && [_ARRAY___ count])
+#define JXT_NOT_NULL_OR_EMPTY_OF_DICTIONARY(_DICTIONARY___) (_DICTIONARY___ && [_DICTIONARY___ isKindOfClass:[NSDictionary class]] && [_DICTIONARY___ count])
 
 typedef void(^MVCPBaseNetworkCompletion)(id responseData, NSError *aError);
 
