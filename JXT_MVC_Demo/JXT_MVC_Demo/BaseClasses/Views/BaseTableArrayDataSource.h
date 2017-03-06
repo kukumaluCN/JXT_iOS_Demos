@@ -20,12 +20,12 @@
  */
 - (instancetype)initWithCellClass:(Class)cellClass;
 
-/**
- 配置TableView数据源模型数组
 
- @param dataArray 数据源模型数组
+/**
+ TableView数据源模型数组
  */
-- (void)setCellDataArray:(NSArray *)dataArray;
+@property (nonatomic, strong) NSArray * cellsDataArray;
+
 
 /**
  获取

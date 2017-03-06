@@ -16,8 +16,6 @@ static NSString *const kBaseTableViewCellId = @"baseTableViewCellId";
 
 
 @interface BaseTableArrayDataSource ()
-@property (nonatomic, strong) NSArray * dataArray;
-
 @property (nonatomic, assign) Class cellClass;
 @property (nonatomic, copy) NSString * cellReuseIdentifier;
 @end
@@ -42,26 +40,16 @@ static NSString *const kBaseTableViewCellId = @"baseTableViewCellId";
 
 
 #pragma mark - Public Methods
-- (void)setCellDataArray:(NSArray *)dataArray
-{
-    if (dataArray.count > 0) {
-        self.dataArray = dataArray;
-    }
-    else {
-        NSLog(@"dataArray.count == 0");
-    }
-}
-
 - (id)getCellDataModelAtIndexPath:(NSIndexPath *)indexPath
 {
-    return self.dataArray[(NSUInteger) indexPath.row];
+    return self.cellsDataArray[(NSUInteger) indexPath.row];
 }
 
 
 #pragma mark - UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return self.dataArray.count;
+    return self.cellsDataArray.count;
 }
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
@@ -77,8 +65,8 @@ static NSString *const kBaseTableViewCellId = @"baseTableViewCellId";
             cell = [tableView dequeueReusableCellWithIdentifier:self.cellReuseIdentifier];
         }
         
-        if (self.dataArray.count > 0) {
-            [cell jxt_setCallbackDataModel:self.dataArray[indexPath.row]];
+        if (self.cellsDataArray.count > 0) {
+            [cell jxt_setCallbackDataModel:self.cellsDataArray[indexPath.row]];
         }
         
         return cell;

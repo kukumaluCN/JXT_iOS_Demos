@@ -44,8 +44,6 @@
     self.tableFooterView = self.mainTableFooterView;
     
     self.backgroundColor = [UIColor clearColor];
-    self.contentInset = UIEdgeInsetsMake(64, 0, 0, 0);
-    self.scrollIndicatorInsets = UIEdgeInsetsMake(64, 0, 0, 0);
     
     //设置数据源代理
     BaseTableArrayDataSource * mainDataSource = [[BaseTableArrayDataSource alloc] initWithCellClass:[MainTableViewCell class]];
@@ -72,6 +70,17 @@
 - (void)layoutSubviews
 {
     [super layoutSubviews];
+        
+    CGFloat statusBarHeight = [UIApplication sharedApplication].statusBarFrame.size.height;
+    CGFloat topBarHeight = 44 + statusBarHeight;
+    self.contentInset = UIEdgeInsetsMake(topBarHeight, 0, 0, 0);
+    self.scrollIndicatorInsets = UIEdgeInsetsMake(topBarHeight, 0, 0, 0);
+    
+    //解决tableView的数据源为空时，旋转屏幕，contentSize的高度可能出错
+    if (!(self.mainDataSource.cellsDataArray.count > 0))
+    {
+        self.contentSize = CGSizeMake(self.bounds.size.width, self.bounds.size.height-topBarHeight);
+    }
     
     _mainTableHeaderView.frame = CGRectMake(0, 0, self.bounds.size.width, 100);
     _mainTableFooterView.frame = CGRectMake(0, _mainTableHeaderView.bounds.size.height, self.bounds.size.width, self.bounds.size.height-_mainTableHeaderView.bounds.size.height-self.contentInset.top);
@@ -99,9 +108,9 @@
     [self.mainTableFooterView loadSuccess];
     self.tableFooterView = nil;
     self.mainTableFooterView = nil;
-    //先替换表数据源
-    [self.mainDataSource setCellDataArray:mainModel.listDatas];
     
+    //先替换表数据源
+    [self.mainDataSource setCellsDataArray:mainModel.listDatas];
     //后刷新dataSource协议方法
     [super reloadData];
 }
