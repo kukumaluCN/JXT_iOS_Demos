@@ -1,6 +1,12 @@
 # JXT\_iOS\_Demos
 一些iOS相关的测试Demo汇总
 
+## 2017.3.9 AddSubviewToLayout
+关于`UIView`的`layoutSubviews`方法的触发时机中，除了其他的那些（详见参考博文），这里探讨下关于“addSubview会触发layoutSubviews”这条，当视图存在多个层级时，各个层级在addSubview时触发各自的layoutSubviews方法的时机，是和预想的不太一样的，并不是按照执行addSubview的先后，顺序触发对应的layoutSubviews，而是从展示视图时为时机，再根据层级逐级往下进行的，对于viewController，展示视图的实际就是`[self.view addSubview:v1]`，不添加展示的父视图，其子视图添加显示无意义。  
+参考博文：  
+1.[layoutSubviews总结](http://blog.csdn.net/bsplover/article/details/7977944)  
+2.[iOS开发笔记--什么时候调用layoutSubviews](http://blog.csdn.net/hopedark/article/details/24313445)  
+
 ## 2017.3.4 JXT\_MVC\_Demo 
 - **JXTDataModelManager**   
 使用`UIView`的分类扩展属性`jxt_dataModel`和方法`jxt_reloadData`，令所有`UIView`动态绑定对应的数据模型属性，`UIView`子类重写`jxt_reloadData`方法，在`jxt_dataModel`执行`set`时，会自动回调该方法，从而进行数据UI显示刷新。  

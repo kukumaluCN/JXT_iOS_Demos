@@ -40,6 +40,7 @@ static inline NSError *BaseNetworkError(id url, NSInteger code, NSDictionary *us
     {
         absoluteUrl = [NSURL URLWithString:url];
     }
+    //domain为nil，闪退
     return [NSError errorWithDomain:BaseNetworkErrorDomain(absoluteUrl.path) code:code userInfo:userInfo];
 }
 
