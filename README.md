@@ -1,7 +1,13 @@
 # JXT\_iOS\_Demos
 一些iOS相关的测试Demo汇总
 
-## 201.3.13 PassthroughView
+## 2017.3.14 ClassPropertyTest
+关于xcode8新增的“类属性”的简单应用。  
+参考博文：  
+1.[iOS 中的类属性](http://blog.csdn.net/u011619283/article/details/53139113)  
+2.[Category 的一些事](http://www.jianshu.com/p/17bdfcfd5aa6)
+
+## 2017.3.13 PassthroughView
 一种可带自身响应且可事件穿透的视图的实现。类似于UIPopoverController的passthroughViews属性。  
 源码附带[WEPopover](https://github.com/werner77/WEPopover)demo作为参考。  
 博文参考：  
