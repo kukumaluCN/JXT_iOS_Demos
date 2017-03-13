@@ -1,0 +1,325 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A72FED151E723C9400D3AF4D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A72FED141E723C9400D3AF4D /* main.m */; };
+		A72FED181E723C9400D3AF4D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A72FED171E723C9400D3AF4D /* AppDelegate.m */; };
+		A72FED1B1E723C9400D3AF4D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A72FED1A1E723C9400D3AF4D /* ViewController.m */; };
+		A72FED1E1E723C9400D3AF4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A72FED1C1E723C9400D3AF4D /* Main.storyboard */; };
+		A72FED201E723C9400D3AF4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A72FED1F1E723C9400D3AF4D /* Assets.xcassets */; };
+		A72FED231E723C9400D3AF4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A72FED211E723C9400D3AF4D /* LaunchScreen.storyboard */; };
+		A72FED2C1E723CA000D3AF4D /* PassthroughView.m in Sources */ = {isa = PBXBuildFile; fileRef = A72FED2B1E723CA000D3AF4D /* PassthroughView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A72FED101E723C9400D3AF4D /* PassthroughView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PassthroughView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A72FED141E723C9400D3AF4D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A72FED161E723C9400D3AF4D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A72FED171E723C9400D3AF4D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A72FED191E723C9400D3AF4D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A72FED1A1E723C9400D3AF4D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A72FED1D1E723C9400D3AF4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A72FED1F1E723C9400D3AF4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A72FED221E723C9400D3AF4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A72FED241E723C9400D3AF4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A72FED2A1E723CA000D3AF4D /* PassthroughView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PassthroughView.h; sourceTree = "<group>"; };
+		A72FED2B1E723CA000D3AF4D /* PassthroughView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PassthroughView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A72FED0D1E723C9400D3AF4D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A72FED071E723C9400D3AF4D = {
+			isa = PBXGroup;
+			children = (
+				A72FED121E723C9400D3AF4D /* PassthroughView */,
+				A72FED111E723C9400D3AF4D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A72FED111E723C9400D3AF4D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A72FED101E723C9400D3AF4D /* PassthroughView.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A72FED121E723C9400D3AF4D /* PassthroughView */ = {
+			isa = PBXGroup;
+			children = (
+				A72FED161E723C9400D3AF4D /* AppDelegate.h */,
+				A72FED171E723C9400D3AF4D /* AppDelegate.m */,
+				A72FED191E723C9400D3AF4D /* ViewController.h */,
+				A72FED1A1E723C9400D3AF4D /* ViewController.m */,
+				A72FED2A1E723CA000D3AF4D /* PassthroughView.h */,
+				A72FED2B1E723CA000D3AF4D /* PassthroughView.m */,
+				A72FED1C1E723C9400D3AF4D /* Main.storyboard */,
+				A72FED1F1E723C9400D3AF4D /* Assets.xcassets */,
+				A72FED211E723C9400D3AF4D /* LaunchScreen.storyboard */,
+				A72FED241E723C9400D3AF4D /* Info.plist */,
+				A72FED131E723C9400D3AF4D /* Supporting Files */,
+			);
+			path = PassthroughView;
+			sourceTree = "<group>";
+		};
+		A72FED131E723C9400D3AF4D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A72FED141E723C9400D3AF4D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A72FED0F1E723C9400D3AF4D /* PassthroughView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A72FED271E723C9400D3AF4D /* Build configuration list for PBXNativeTarget "PassthroughView" */;
+			buildPhases = (
+				A72FED0C1E723C9400D3AF4D /* Sources */,
+				A72FED0D1E723C9400D3AF4D /* Frameworks */,
+				A72FED0E1E723C9400D3AF4D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PassthroughView;
+			productName = PassthroughView;
+			productReference = A72FED101E723C9400D3AF4D /* PassthroughView.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A72FED081E723C9400D3AF4D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = JXT;
+				TargetAttributes = {
+					A72FED0F1E723C9400D3AF4D = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = A72FED0B1E723C9400D3AF4D /* Build configuration list for PBXProject "PassthroughView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A72FED071E723C9400D3AF4D;
+			productRefGroup = A72FED111E723C9400D3AF4D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A72FED0F1E723C9400D3AF4D /* PassthroughView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A72FED0E1E723C9400D3AF4D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A72FED231E723C9400D3AF4D /* LaunchScreen.storyboard in Resources */,
+				A72FED201E723C9400D3AF4D /* Assets.xcassets in Resources */,
+				A72FED1E1E723C9400D3AF4D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A72FED0C1E723C9400D3AF4D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A72FED1B1E723C9400D3AF4D /* ViewController.m in Sources */,
+				A72FED181E723C9400D3AF4D /* AppDelegate.m in Sources */,
+				A72FED151E723C9400D3AF4D /* main.m in Sources */,
+				A72FED2C1E723CA000D3AF4D /* PassthroughView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A72FED1C1E723C9400D3AF4D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A72FED1D1E723C9400D3AF4D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A72FED211E723C9400D3AF4D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A72FED221E723C9400D3AF4D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A72FED251E723C9400D3AF4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A72FED261E723C9400D3AF4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A72FED281E723C9400D3AF4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = PassthroughView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JXT.xxx;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A72FED291E723C9400D3AF4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = PassthroughView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JXT.xxx;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A72FED0B1E723C9400D3AF4D /* Build configuration list for PBXProject "PassthroughView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A72FED251E723C9400D3AF4D /* Debug */,
+				A72FED261E723C9400D3AF4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A72FED271E723C9400D3AF4D /* Build configuration list for PBXNativeTarget "PassthroughView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A72FED281E723C9400D3AF4D /* Debug */,
+				A72FED291E723C9400D3AF4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A72FED081E723C9400D3AF4D /* Project object */;
+}

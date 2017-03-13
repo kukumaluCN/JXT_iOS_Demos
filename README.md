@@ -1,6 +1,14 @@
 # JXT\_iOS\_Demos
 一些iOS相关的测试Demo汇总
 
+## 201.3.13 PassthroughView
+一种可带自身响应且可事件穿透的视图的实现。类似于UIPopoverController的passthroughViews属性。  
+源码附带[WEPopover](https://github.com/werner77/WEPopover)demo作为参考。  
+博文参考：  
+1.[UIView 中的控件事件穿透 Passthrough 的实现](http://unmi.cc/uiview-event-passthrough/)  
+2.[WEPopover](https://github.com/werner77/WEPopover)
+ 
+
 ## 2017.3.9 AddSubviewToLayout
 关于`UIView`的`layoutSubviews`方法的触发时机中，除了其他的那些（详见参考博文），这里探讨下关于“addSubview会触发layoutSubviews”这条，当视图存在多个层级时，各个层级在addSubview时触发各自的layoutSubviews方法的时机，是和预想的不太一样的，并不是按照执行addSubview的先后，顺序触发对应的layoutSubviews，而是从展示视图时为时机，再根据层级逐级往下进行的，对于viewController，展示视图的实际就是`[self.view addSubview:v1]`，不添加展示的父视图，其子视图添加显示无意义。  
 参考博文：  
