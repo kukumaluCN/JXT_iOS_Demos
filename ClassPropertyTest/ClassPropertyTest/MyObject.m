@@ -12,7 +12,7 @@
 
 #import <objc/runtime.h>
 
-static NSObject *__myobj_aPropertyVariable = nil;
+static NSObject *__myobj_globalVariable = nil;
 
 @implementation MyObject
 
@@ -29,11 +29,11 @@ static NSObject *__myobj_aPropertyVariable = nil;
 
 + (void)setClassProperty2:(NSObject *)classProperty2
 {
-    __myobj_aPropertyVariable = classProperty2;
+    __myobj_globalVariable = classProperty2;
 }
 + (NSObject *)classProperty2
 {
-    return __myobj_aPropertyVariable;
+    return __myobj_globalVariable;
 }
 
 @end
