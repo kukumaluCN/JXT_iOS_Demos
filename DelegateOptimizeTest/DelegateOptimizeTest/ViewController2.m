@@ -8,6 +8,8 @@
 
 #import "ViewController2.h"
 
+#import "ViewController3.h"
+
 @interface ViewController2 ()
 
 @end
@@ -37,6 +39,10 @@
 {
     [super viewWillDisappear:animated];
     
+    NSLog(@"viewDidDisappear-%@", self.navigationController);
+    NSLog(@"viewDidDisappear-%@", self.navigationController.viewControllers);
+
+    
 //    if (![self.navigationController.viewControllers containsObject:self])//等效[self.navigationController.viewControllers indexOfObject:self] == NSNotFound
 //    {
 //        if ([_delegate respondsToSelector:@selector(carryVC2Title:fetcher:)]) {
@@ -58,6 +64,7 @@
     [super viewDidDisappear:animated];
     
     //self.navigationController == nil
+    NSLog(@"viewDidDisappear-%@", self.navigationController);
     NSLog(@"viewDidDisappear-%@", self.navigationController.viewControllers);
     
     if (!self.navigationController || ![self.navigationController.viewControllers containsObject:self])
@@ -112,6 +119,12 @@
     _delegateFlags.respondsToCarryVC2TitleFetcher = [_delegate respondsToSelector:@selector(carryVC2Title:fetcher:)];
     _delegateFlags.respondsToCarryVC2Message = [_delegate respondsToSelector:@selector(carryVC2Message:)];
     _delegateFlags.respondsToReceivedNetWorkDataDict = [_delegate respondsToSelector:@selector(receivedNetWorkDataDict:)];
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    ViewController3 *vc3 = [[ViewController3 alloc] init];
+    [self.navigationController pushViewController:vc3 animated:YES];
 }
 
 @end
