@@ -1,7 +1,21 @@
 # JXT\_iOS\_Demos
 一些iOS相关的测试Demo汇总
 
-## 2017.5.18 KVO监听实例变量的实现
+## 2017.5.23 AnimationBlockDelegateTest
+利用block将`CAAnimationDelegate`方法进行简易封装，便于使用。    
+使用示例：  
+```
+moveAnimation.delegate = [JXTAnimationBlockDelegate animationBlockDelegateWithAnimationDidStart:^{
+    NSLog(@"start");
+} animationDidStop:^(BOOL finished) {
+    NSLog(@"stop - %zd", finished);
+}];
+```  
+博文参考：  
+[View-Layer 协作](https://objccn.io/issue-12-4/)
+
+## 2017.5.18 KVOForInstanceVarTest
+KVO监听实例变量的实现  
 修改对象属性，会自动触发KVO监听，但是直接修改属性的实例变量，是不会触发KVO的，所以一般都使用set方法来修改属性值（`self.value = newValue`），而不是直接使用实例变量（`_value = newValue`）。  
 但是如果类成员对象本身就是实例变量，而不是属性，还需要使用KVO的话，就需要手动实现来使得该实例变量支持KVO。   
 博文参考：   
