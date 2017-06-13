@@ -14,7 +14,8 @@
 		A7204D6F1EF0364C007C95FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7204D6E1EF0364C007C95FA /* Assets.xcassets */; };
 		A7204D721EF0364C007C95FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7204D701EF0364C007C95FA /* LaunchScreen.storyboard */; };
 		A7204D7B1EF036D9007C95FA /* JXTTwinkleStarView.m in Sources */ = {isa = PBXBuildFile; fileRef = A7204D7A1EF036D9007C95FA /* JXTTwinkleStarView.m */; };
-		A7204D7D1EF03711007C95FA /* emitter_star@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A7204D7C1EF03711007C95FA /* emitter_star@2x.png */; };
+		A7204D7F1EF04514007C95FA /* emitter_star@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A7204D7E1EF04514007C95FA /* emitter_star@2x.png */; };
+		A7204D811EF0451F007C95FA /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = A7204D801EF0451F007C95FA /* star.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,7 +31,8 @@
 		A7204D731EF0364C007C95FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A7204D791EF036D9007C95FA /* JXTTwinkleStarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXTTwinkleStarView.h; sourceTree = "<group>"; };
 		A7204D7A1EF036D9007C95FA /* JXTTwinkleStarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXTTwinkleStarView.m; sourceTree = "<group>"; };
-		A7204D7C1EF03711007C95FA /* emitter_star@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "emitter_star@2x.png"; path = "../../GitLab_Local/XESIPS/Classes/EmitterView/Resources/emitter_star@2x.png"; sourceTree = "<group>"; };
+		A7204D7E1EF04514007C95FA /* emitter_star@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "emitter_star@2x.png"; sourceTree = "<group>"; };
+		A7204D801EF0451F007C95FA /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +71,8 @@
 				A7204D691EF0364C007C95FA /* ViewController.m */,
 				A7204D791EF036D9007C95FA /* JXTTwinkleStarView.h */,
 				A7204D7A1EF036D9007C95FA /* JXTTwinkleStarView.m */,
-				A7204D7C1EF03711007C95FA /* emitter_star@2x.png */,
+				A7204D801EF0451F007C95FA /* star.png */,
+				A7204D7E1EF04514007C95FA /* emitter_star@2x.png */,
 				A7204D6B1EF0364C007C95FA /* Main.storyboard */,
 				A7204D6E1EF0364C007C95FA /* Assets.xcassets */,
 				A7204D701EF0364C007C95FA /* LaunchScreen.storyboard */,
@@ -146,9 +149,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7204D721EF0364C007C95FA /* LaunchScreen.storyboard in Resources */,
+				A7204D811EF0451F007C95FA /* star.png in Resources */,
 				A7204D6F1EF0364C007C95FA /* Assets.xcassets in Resources */,
-				A7204D7D1EF03711007C95FA /* emitter_star@2x.png in Resources */,
 				A7204D6D1EF0364C007C95FA /* Main.storyboard in Resources */,
+				A7204D7F1EF04514007C95FA /* emitter_star@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,6 +325,7 @@
 				A7204D781EF0364C007C95FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
