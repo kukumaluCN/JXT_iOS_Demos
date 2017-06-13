@@ -1,6 +1,9 @@
 # JXT\_iOS\_Demos
 一些iOS相关的测试Demo汇总
 
+## 2017.6.14 JXTTwinkleStarView
+一种星光闪烁的伪粒子效果的实现，利用CA动画+随机数+延时，可以适用于简单的使用场景。该视图实现提供两种外观形状，可根据不同场景调节使用，方法实现较为简陋，没有特定的封装，可以参考下。
+
 ## 2017.5.23 AnimationBlockDelegateTest
 利用block将`CAAnimationDelegate`方法进行简易封装，便于使用。    
 使用示例：  

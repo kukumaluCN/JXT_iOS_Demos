@@ -1,0 +1,328 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A7204D641EF0364C007C95FA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A7204D631EF0364C007C95FA /* main.m */; };
+		A7204D671EF0364C007C95FA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A7204D661EF0364C007C95FA /* AppDelegate.m */; };
+		A7204D6A1EF0364C007C95FA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7204D691EF0364C007C95FA /* ViewController.m */; };
+		A7204D6D1EF0364C007C95FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7204D6B1EF0364C007C95FA /* Main.storyboard */; };
+		A7204D6F1EF0364C007C95FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7204D6E1EF0364C007C95FA /* Assets.xcassets */; };
+		A7204D721EF0364C007C95FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7204D701EF0364C007C95FA /* LaunchScreen.storyboard */; };
+		A7204D7B1EF036D9007C95FA /* JXTTwinkleStarView.m in Sources */ = {isa = PBXBuildFile; fileRef = A7204D7A1EF036D9007C95FA /* JXTTwinkleStarView.m */; };
+		A7204D7D1EF03711007C95FA /* emitter_star@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A7204D7C1EF03711007C95FA /* emitter_star@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A7204D5F1EF0364C007C95FA /* JXTTwinkleStarView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JXTTwinkleStarView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7204D631EF0364C007C95FA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A7204D651EF0364C007C95FA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A7204D661EF0364C007C95FA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A7204D681EF0364C007C95FA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A7204D691EF0364C007C95FA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A7204D6C1EF0364C007C95FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A7204D6E1EF0364C007C95FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A7204D711EF0364C007C95FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A7204D731EF0364C007C95FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7204D791EF036D9007C95FA /* JXTTwinkleStarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXTTwinkleStarView.h; sourceTree = "<group>"; };
+		A7204D7A1EF036D9007C95FA /* JXTTwinkleStarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXTTwinkleStarView.m; sourceTree = "<group>"; };
+		A7204D7C1EF03711007C95FA /* emitter_star@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "emitter_star@2x.png"; path = "../../GitLab_Local/XESIPS/Classes/EmitterView/Resources/emitter_star@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A7204D5C1EF0364C007C95FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A7204D561EF0364C007C95FA = {
+			isa = PBXGroup;
+			children = (
+				A7204D611EF0364C007C95FA /* JXTTwinkleStarView */,
+				A7204D601EF0364C007C95FA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A7204D601EF0364C007C95FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A7204D5F1EF0364C007C95FA /* JXTTwinkleStarView.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A7204D611EF0364C007C95FA /* JXTTwinkleStarView */ = {
+			isa = PBXGroup;
+			children = (
+				A7204D651EF0364C007C95FA /* AppDelegate.h */,
+				A7204D661EF0364C007C95FA /* AppDelegate.m */,
+				A7204D681EF0364C007C95FA /* ViewController.h */,
+				A7204D691EF0364C007C95FA /* ViewController.m */,
+				A7204D791EF036D9007C95FA /* JXTTwinkleStarView.h */,
+				A7204D7A1EF036D9007C95FA /* JXTTwinkleStarView.m */,
+				A7204D7C1EF03711007C95FA /* emitter_star@2x.png */,
+				A7204D6B1EF0364C007C95FA /* Main.storyboard */,
+				A7204D6E1EF0364C007C95FA /* Assets.xcassets */,
+				A7204D701EF0364C007C95FA /* LaunchScreen.storyboard */,
+				A7204D731EF0364C007C95FA /* Info.plist */,
+				A7204D621EF0364C007C95FA /* Supporting Files */,
+			);
+			path = JXTTwinkleStarView;
+			sourceTree = "<group>";
+		};
+		A7204D621EF0364C007C95FA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A7204D631EF0364C007C95FA /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A7204D5E1EF0364C007C95FA /* JXTTwinkleStarView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7204D761EF0364C007C95FA /* Build configuration list for PBXNativeTarget "JXTTwinkleStarView" */;
+			buildPhases = (
+				A7204D5B1EF0364C007C95FA /* Sources */,
+				A7204D5C1EF0364C007C95FA /* Frameworks */,
+				A7204D5D1EF0364C007C95FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JXTTwinkleStarView;
+			productName = JXTTwinkleStarView;
+			productReference = A7204D5F1EF0364C007C95FA /* JXTTwinkleStarView.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A7204D571EF0364C007C95FA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = JXT;
+				TargetAttributes = {
+					A7204D5E1EF0364C007C95FA = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = A7204D5A1EF0364C007C95FA /* Build configuration list for PBXProject "JXTTwinkleStarView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A7204D561EF0364C007C95FA;
+			productRefGroup = A7204D601EF0364C007C95FA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A7204D5E1EF0364C007C95FA /* JXTTwinkleStarView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A7204D5D1EF0364C007C95FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7204D721EF0364C007C95FA /* LaunchScreen.storyboard in Resources */,
+				A7204D6F1EF0364C007C95FA /* Assets.xcassets in Resources */,
+				A7204D7D1EF03711007C95FA /* emitter_star@2x.png in Resources */,
+				A7204D6D1EF0364C007C95FA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A7204D5B1EF0364C007C95FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7204D7B1EF036D9007C95FA /* JXTTwinkleStarView.m in Sources */,
+				A7204D6A1EF0364C007C95FA /* ViewController.m in Sources */,
+				A7204D671EF0364C007C95FA /* AppDelegate.m in Sources */,
+				A7204D641EF0364C007C95FA /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A7204D6B1EF0364C007C95FA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A7204D6C1EF0364C007C95FA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A7204D701EF0364C007C95FA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A7204D711EF0364C007C95FA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A7204D741EF0364C007C95FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A7204D751EF0364C007C95FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A7204D771EF0364C007C95FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JXTTwinkleStarView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JXT.JXTTwinkleStarView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A7204D781EF0364C007C95FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JXTTwinkleStarView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JXT.JXTTwinkleStarView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A7204D5A1EF0364C007C95FA /* Build configuration list for PBXProject "JXTTwinkleStarView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7204D741EF0364C007C95FA /* Debug */,
+				A7204D751EF0364C007C95FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7204D761EF0364C007C95FA /* Build configuration list for PBXNativeTarget "JXTTwinkleStarView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7204D771EF0364C007C95FA /* Debug */,
+				A7204D781EF0364C007C95FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A7204D571EF0364C007C95FA /* Project object */;
+}
