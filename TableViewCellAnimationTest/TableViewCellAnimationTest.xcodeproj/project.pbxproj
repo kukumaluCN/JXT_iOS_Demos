@@ -1,0 +1,318 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A77F87441F2EC72C000F8746 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A77F87431F2EC72C000F8746 /* main.m */; };
+		A77F87471F2EC72C000F8746 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A77F87461F2EC72C000F8746 /* AppDelegate.m */; };
+		A77F874A1F2EC72C000F8746 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A77F87491F2EC72C000F8746 /* ViewController.m */; };
+		A77F874D1F2EC72C000F8746 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A77F874B1F2EC72C000F8746 /* Main.storyboard */; };
+		A77F874F1F2EC72C000F8746 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A77F874E1F2EC72C000F8746 /* Assets.xcassets */; };
+		A77F87521F2EC72C000F8746 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A77F87501F2EC72C000F8746 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A77F873F1F2EC72C000F8746 /* TableViewCellAnimationTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViewCellAnimationTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A77F87431F2EC72C000F8746 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A77F87451F2EC72C000F8746 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A77F87461F2EC72C000F8746 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A77F87481F2EC72C000F8746 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A77F87491F2EC72C000F8746 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A77F874C1F2EC72C000F8746 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A77F874E1F2EC72C000F8746 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A77F87511F2EC72C000F8746 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A77F87531F2EC72C000F8746 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A77F873C1F2EC72C000F8746 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A77F87361F2EC72B000F8746 = {
+			isa = PBXGroup;
+			children = (
+				A77F87411F2EC72C000F8746 /* TableViewCellAnimationTest */,
+				A77F87401F2EC72C000F8746 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A77F87401F2EC72C000F8746 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A77F873F1F2EC72C000F8746 /* TableViewCellAnimationTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A77F87411F2EC72C000F8746 /* TableViewCellAnimationTest */ = {
+			isa = PBXGroup;
+			children = (
+				A77F87451F2EC72C000F8746 /* AppDelegate.h */,
+				A77F87461F2EC72C000F8746 /* AppDelegate.m */,
+				A77F87481F2EC72C000F8746 /* ViewController.h */,
+				A77F87491F2EC72C000F8746 /* ViewController.m */,
+				A77F874B1F2EC72C000F8746 /* Main.storyboard */,
+				A77F874E1F2EC72C000F8746 /* Assets.xcassets */,
+				A77F87501F2EC72C000F8746 /* LaunchScreen.storyboard */,
+				A77F87531F2EC72C000F8746 /* Info.plist */,
+				A77F87421F2EC72C000F8746 /* Supporting Files */,
+			);
+			path = TableViewCellAnimationTest;
+			sourceTree = "<group>";
+		};
+		A77F87421F2EC72C000F8746 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A77F87431F2EC72C000F8746 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A77F873E1F2EC72C000F8746 /* TableViewCellAnimationTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A77F87561F2EC72C000F8746 /* Build configuration list for PBXNativeTarget "TableViewCellAnimationTest" */;
+			buildPhases = (
+				A77F873B1F2EC72C000F8746 /* Sources */,
+				A77F873C1F2EC72C000F8746 /* Frameworks */,
+				A77F873D1F2EC72C000F8746 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TableViewCellAnimationTest;
+			productName = TableViewCellAnimationTest;
+			productReference = A77F873F1F2EC72C000F8746 /* TableViewCellAnimationTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A77F87371F2EC72B000F8746 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = JXT;
+				TargetAttributes = {
+					A77F873E1F2EC72C000F8746 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = A77F873A1F2EC72B000F8746 /* Build configuration list for PBXProject "TableViewCellAnimationTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A77F87361F2EC72B000F8746;
+			productRefGroup = A77F87401F2EC72C000F8746 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A77F873E1F2EC72C000F8746 /* TableViewCellAnimationTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A77F873D1F2EC72C000F8746 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A77F87521F2EC72C000F8746 /* LaunchScreen.storyboard in Resources */,
+				A77F874F1F2EC72C000F8746 /* Assets.xcassets in Resources */,
+				A77F874D1F2EC72C000F8746 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A77F873B1F2EC72C000F8746 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A77F874A1F2EC72C000F8746 /* ViewController.m in Sources */,
+				A77F87471F2EC72C000F8746 /* AppDelegate.m in Sources */,
+				A77F87441F2EC72C000F8746 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A77F874B1F2EC72C000F8746 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A77F874C1F2EC72C000F8746 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A77F87501F2EC72C000F8746 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A77F87511F2EC72C000F8746 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A77F87541F2EC72C000F8746 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A77F87551F2EC72C000F8746 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A77F87571F2EC72C000F8746 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TableViewCellAnimationTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JXT.TableViewCellAnimationTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A77F87581F2EC72C000F8746 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TableViewCellAnimationTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JXT.TableViewCellAnimationTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A77F873A1F2EC72B000F8746 /* Build configuration list for PBXProject "TableViewCellAnimationTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A77F87541F2EC72C000F8746 /* Debug */,
+				A77F87551F2EC72C000F8746 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A77F87561F2EC72C000F8746 /* Build configuration list for PBXNativeTarget "TableViewCellAnimationTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A77F87571F2EC72C000F8746 /* Debug */,
+				A77F87581F2EC72C000F8746 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A77F87371F2EC72B000F8746 /* Project object */;
+}

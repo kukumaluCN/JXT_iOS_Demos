@@ -6,6 +6,24 @@
 参考博文：  
 [在头文件中使用static定义变量意味着什么](http://www.cnblogs.com/zplutor/archive/2011/08/06/2129401.html)
 
+## 2017.7.31 TableViewCellAnimationTest
+一种给TableView的Cell添加动画效果的简单方式，动画效果可自行定义，下面是示例代码，效果见Demo。
+
+```
+#pragma mark - Cell Animation
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    CGPoint center = cell.center;
+    CGPoint orgCenter = center;
+    center.x -= cell.bounds.size.width;
+    cell.center = center;
+    
+    [UIView animateWithDuration:0.5 animations:^{
+        cell.center = orgCenter;
+    }];
+}
+```
+
 ## 2017.6.14 JXTTwinkleStarView
 一种星光闪烁的伪粒子效果的实现，利用CA动画+随机数+延时，可以适用于简单的使用场景。该视图实现提供两种外观形状，可根据不同场景调节使用，方法实现较为简陋，没有特定的封装，可以参考下。
 ![](/Users/JXT/Desktop/Github_Clone/JXT_iOS_Demos/JXTTwinkleStarView/JXTTwinkleStarView/star.png)
