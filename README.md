@@ -1,6 +1,11 @@
 # JXT\_iOS\_Demos
 一些iOS相关的测试Demo汇总
 
+## 2017.9.11 GlobalStaticValueTest
+如果在头文件(.h)中定义static修饰的变量，意味着什么呢？全局变量吗？首先编译时不会报错的，但是这并不是一种正确的或者说是恰当的写法，真正的全局变量是用extern来修饰定义的。  
+参考博文：  
+[在头文件中使用static定义变量意味着什么](http://www.cnblogs.com/zplutor/archive/2011/08/06/2129401.html)
+
 ## 2017.6.14 JXTTwinkleStarView
 一种星光闪烁的伪粒子效果的实现，利用CA动画+随机数+延时，可以适用于简单的使用场景。该视图实现提供两种外观形状，可根据不同场景调节使用，方法实现较为简陋，没有特定的封装，可以参考下。
 ![](/Users/JXT/Desktop/Github_Clone/JXT_iOS_Demos/JXTTwinkleStarView/JXTTwinkleStarView/star.png)
