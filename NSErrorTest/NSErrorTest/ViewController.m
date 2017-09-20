@@ -44,6 +44,8 @@ static NSString *const NSErrorTestCustomErrorKey = @"NSErrorTestCustomError";
     
     NSLog(@"NSCocoaErrorDomain:%@", NSCocoaErrorDomain);
     
+    NSLog(@"-------------------1------------------");
+    
     /**
      *  1.传入error地址，error作为输出参数，内部定制的错误，外部获取错误
      */
@@ -57,6 +59,7 @@ static NSString *const NSErrorTestCustomErrorKey = @"NSErrorTestCustomError";
         NSLog(@"localizedFailureReason:%@", err.localizedFailureReason);
     }
     
+    NSLog(@"-------------------2------------------");
     
     /**
      *  2.无意义的做法
@@ -65,6 +68,7 @@ static NSString *const NSErrorTestCustomErrorKey = @"NSErrorTestCustomError";
     [self config2WithString:@"" error:err2];
     NSLog(@"---%@", err2);
     
+    NSLog(@"-------------------3------------------");
     
     /**
      *  3.外部实现错误，内部捕获
