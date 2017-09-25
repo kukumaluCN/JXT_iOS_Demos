@@ -1,6 +1,12 @@
 # JXT\_iOS\_Demos
 一些iOS相关的测试Demo汇总
 
+## 2017.9.25 IfNilTest
+`if (array.count == 0)`这个条件句，包含着两重意思，当`array == nil`时，当`array.count == 0`时，该语句都成立，但是有时也是因为这种双重语义，会导致某些业务场景的bug，这个还是要注意的，`nil == 0`。  
+>博文参考：  
+1.[Objective-C中nil使用的最佳实践](http://www.cocoachina.com/ios/20141119/10247.html)  
+2.[nil/Nil/NULL/NSNull的区别](http://blog.csdn.net/wzzvictory/article/details/18413519)  
+
 ## 2017.9.25 DoWhile0MacroTest
 在一些宏定义中，经常能看到`do {...} while (0)`这样的语法的应用，它的意义和作用是什么呢？通过研究，发现其能避免一些上下文匹配的错误，防止隐患。具体可以参考下面的文章：  
 >参考博文：  
