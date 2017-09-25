@@ -1,12 +1,19 @@
 # JXT\_iOS\_Demos
 一些iOS相关的测试Demo汇总
 
+## 2017.9.25 DoWhile0MacroTest
+在一些宏定义中，经常能看到`do {...} while (0)`这样的语法的应用，它的意义和作用是什么呢？通过研究，发现其能避免一些上下文匹配的错误，防止隐患。具体可以参考下面的文章：  
+>参考博文：  
+1.[宏定义中的do...while(0)用途](http://www.jianshu.com/p/51ee5d028c76)  
+2.[do {...} while (0) 在宏定义中的作用](http://www.cnblogs.com/lanxuezaipiao/p/3535626.html)  
+3.[do...while(0)在宏定义中的巧妙用法](http://blog.csdn.net/luoweifu/article/details/38563161)  
+
 ## 2017.9.18 ViewBoundsInitErrorTest
 一个view初始化时，宽高给负值，那么其bounds会变为(-宽,-高,宽,高)，改变一个view的bounds，其本身不会有影响，但是会影响其子视图的布局，因为子视图相对于其的左边原点改变了，父视图的左上角坐标为负值，那么子视图相对的布局原点一定要偏右下，这样会造成隐式的布局bug，尤其是在view动态初始化时，宽高动态计算，值不确定，这样的bug会很隐蔽，难以定位。
 
 ## 2017.9.11 GlobalStaticValueTest
 如果在头文件(.h)中定义static修饰的变量，意味着什么呢？全局变量吗？首先编译时不会报错的，但是这并不是一种正确的或者说是恰当的写法，真正的全局变量是用extern来修饰定义的。  
-参考博文：  
+>参考博文：  
 [在头文件中使用static定义变量意味着什么](http://www.cnblogs.com/zplutor/archive/2011/08/06/2129401.html)
 
 ## 2017.7.31 TableViewCellAnimationTest
@@ -41,34 +48,34 @@ moveAnimation.delegate = [JXTAnimationBlockDelegate animationBlockDelegateWithAn
     NSLog(@"stop - %zd", finished);
 }];
 ```  
-博文参考：  
+>博文参考：  
 [View-Layer 协作](https://objccn.io/issue-12-4/)
 
 ## 2017.5.18 KVOForInstanceVarTest
 KVO监听实例变量的实现  
 修改对象属性，会自动触发KVO监听，但是直接修改属性的实例变量，是不会触发KVO的，所以一般都使用set方法来修改属性值（`self.value = newValue`），而不是直接使用实例变量（`_value = newValue`）。  
 但是如果类成员对象本身就是实例变量，而不是属性，还需要使用KVO的话，就需要手动实现来使得该实例变量支持KVO。   
-博文参考：   
+>博文参考：   
 [手动设定实例变量的KVO实现监听](http://www.cnblogs.com/YouXianMing/p/3902827.html)
 
 
 ## 2017.3.14 ClassPropertyTest
 关于xcode8新增的“类属性”的简单应用。  
-参考博文：  
+>参考博文：  
 1.[iOS 中的类属性](http://blog.csdn.net/u011619283/article/details/53139113)  
 2.[Category 的一些事](http://www.jianshu.com/p/17bdfcfd5aa6)
 
 ## 2017.3.13 PassthroughView
 一种可带自身响应且可事件穿透的视图的实现。类似于UIPopoverController的passthroughViews属性。  
 源码附带[WEPopover](https://github.com/werner77/WEPopover)demo作为参考。  
-博文参考：  
+>博文参考：  
 1.[UIView 中的控件事件穿透 Passthrough 的实现](http://unmi.cc/uiview-event-passthrough/)  
 2.[WEPopover](https://github.com/werner77/WEPopover)
  
 
 ## 2017.3.9 AddSubviewToLayout
 关于`UIView`的`layoutSubviews`方法的触发时机中，除了其他的那些（详见参考博文），这里探讨下关于“addSubview会触发layoutSubviews”这条，当视图存在多个层级时，各个层级在addSubview时触发各自的layoutSubviews方法的时机，是和预想的不太一样的，并不是按照执行addSubview的先后，顺序触发对应的layoutSubviews，而是从展示视图时为时机，再根据层级逐级往下进行的，对于viewController，展示视图的实际就是`[self.view addSubview:v1]`，不添加展示的父视图，其子视图添加显示无意义。  
-参考博文：  
+>参考博文：  
 1.[layoutSubviews总结](http://blog.csdn.net/bsplover/article/details/7977944)  
 2.[iOS开发笔记--什么时候调用layoutSubviews](http://blog.csdn.net/hopedark/article/details/24313445)  
 
@@ -83,18 +90,18 @@ KVO监听实例变量的实现
 
 ## 2017.3.2 MVCDemo  
 运用MVC架构，将TableView和VC解耦的一次尝试，将DataSource从VC分离。将参考文章中的方案做了调整。  
-参考博文：  
+>参考博文：  
 [更轻量的 View Controllers](https://objccn.io/issue-1-1/)
 
 ## 2017.2.16 ChildViewControllerTest  
 关于ChildViewController的简单使用。  
-参考博文：  
+>参考博文：  
 1.[iOS 5.0 后UIViewController新增：willMoveToParentViewController和didMoveToParentViewController](http://blog.sina.com.cn/s/blog_7b9d64af0101d6p7.html)  
 2.[iOS开发 剖析网易新闻标签栏视图切换(addChildViewController属性介绍)](http://blog.csdn.net/hmt20130412/article/details/34523235)
 
 ## 2017.2.10 ThreadArrayTest  
 关于多线程操作数组的安全性问题，关于多线程的几种使用方式的测试。  
-参考博文：  
+>参考博文：  
 1.[如何实现一个线程安全的NSMutabeArray，以保证多个线程对数组操作（遍历，插入，删除）的安全？](https://www.zhihu.com/question/35590962)  
 2.[iOS 线程安全之@synchronized的用法](http://www.cnblogs.com/jukaiit/p/5570056.html)  
 3.[iOS线程安全数组](http://blog.csdn.net/idaretobe/article/details/22191103)  
@@ -102,7 +109,7 @@ KVO监听实例变量的实现
 
 ## 2017.2.8 Quartz2DDemo
 Quartz2D简单入门，一些绘图的基本方法。  
-参考博文：  
+>参考博文：  
 [iOS Quartz2D详解](http://www.imlifengfeng.com/blog/?p=514#comment-127)
 
 ## 2017.1.20 CategoryDelegateUnsafeTest
@@ -118,23 +125,23 @@ Quartz2D简单入门，一些绘图的基本方法。
 
 ## 2017.1.6 KVCTest
 一些关于KVC的简单实用  
-参考博文（作者Lision）：  
+>参考博文（作者Lision）：  
 [有趣的KVC－几行代码打造一个万能容器对象](http://www.jianshu.com/p/ad2d6681630e)
 
 ## 2016.9.25 CAAnimationDelegateTest 
 iOS10  CAAnimationDelegate的“适配”  
-博文：  
+>博文：  
 [iOS10 CAAnimationDelegate的简单适配](http://www.jianshu.com/p/e9feb2c0c3f1)  
 [iOS10 再谈CAAnimationDelegate相关协议的适配](http://www.jianshu.com/p/38f095b2120d)
 
 ## 2016.3.21 JXTAboutNavigationBar
 一些关于navigationBar的非常规的但是较为实用的操作，包括利用毛玻璃、动态透明、动态隐藏，以及头视图的动态缩放，并同时涉及了statusBar的动态设置（换色）。  
-博文：  
+>博文：  
 [iOS 关于navigationBar的一些：毛玻璃、透明、动态缩放、动态隐藏](http://www.jianshu.com/p/b2585c37e14b)
 
 ## 2016.3.6 JXTAlertView
 一种带输入框的自定义alertView的简易封装实现  
-博文：  
+>博文：  
 [iOS 一种带输入框的自定义alertView的简易封装实现](http://www.jianshu.com/p/ef8065282ea4/comments/1652307#comment-1652307)
 
 ## 2016.2.23 CountDownButton
