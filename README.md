@@ -1,6 +1,11 @@
 # JXT\_iOS\_Demos
 一些iOS相关的测试Demo汇总
 
+## 2018.1.26 AboutTimeForiOSDemo
+关于`NSDate`、`CFAbsoluteTimeGetCurrent()`、`gettimeofday`、`mach_absolute_time()`、`CACurrentMediaTime()`、`sysctl`相关获取时间函数的简单介绍，详细文章参考博文内容。
+> 参考博文：
+[iOS关于时间的处理](http://blog.csdn.net/u011619283/article/details/53689076)
+
 ## 2017.9.25 IfNilTest
 `if (array.count == 0)`这个条件句，包含着两重意思，当`array == nil`时，当`array.count == 0`时，该语句都成立，但是有时也是因为这种双重语义，会导致某些业务场景的bug，这个还是要注意的，`nil == 0`。  
 >博文参考：  
