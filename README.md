@@ -1,6 +1,15 @@
 # JXT\_iOS\_Demos
 一些iOS相关的测试Demo汇总
 
+## 2018.1.30 WeakStrongDanceDemo
+关于
+``` objective-c
+#define WeakSelf(type) __weak typeof(type)weak##type = type
+#define StrongSelf(type) __strong typeof(type)type = weak##type
+```
+这两个宏在WeakStrongDance中的应用和解释。
+`##`在宏里可以连接字符串。这里就是在`block`外把`self`付给`weakself`，然后`block`内把`weakself`还给`self`。`block`外部创建`weakself`，保证了不会有引用计数加一，内部强持有，可以保证在`block`执行前`self`不会被释放。
+
 ## 2018.1.26 AboutTimeForiOSDemo
 关于`NSDate`、`CFAbsoluteTimeGetCurrent()`、`gettimeofday`、`mach_absolute_time()`、`CACurrentMediaTime()`、`sysctl`相关获取时间函数的简单介绍，详细文章参考博文内容。
 > 参考博文：
