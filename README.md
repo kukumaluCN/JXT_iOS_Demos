@@ -61,7 +61,7 @@
 ## 2017.5.23 AnimationBlockDelegateTest
 利用block将`CAAnimationDelegate`方法进行简易封装，便于使用。    
 使用示例：  
-```
+``` objective-c
 moveAnimation.delegate = [JXTAnimationBlockDelegate animationBlockDelegateWithAnimationDidStart:^{
     NSLog(@"start");
 } animationDidStop:^(BOOL finished) {
