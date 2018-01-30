@@ -39,7 +39,7 @@
 ## 2017.7.31 TableViewCellAnimationTest
 一种给TableView的Cell添加动画效果的简单方式，动画效果可自行定义，下面是示例代码，效果见Demo。
 
-```
+``` objective-c
 #pragma mark - Cell Animation
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
 {
