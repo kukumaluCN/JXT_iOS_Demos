@@ -1,12 +1,41 @@
 # JXT\_iOS\_Demos
 一些iOS相关的测试Demo汇总
 
+## 2018.4.8 RemoveSingleElementFromArrayDemo
+数组执行元素删除，会删除相同的所有元素值，而不是只删除单个。   
+在某些业务场景中，只是想删除单一的一个元素，而不是同值的所有元素，类似的例如数据池的取用。  
+本demo采用遍历数组匹配记录index值，并移除特定indexSet集合的方式处理数组，以达到处理效果，实现可能不是很好，但是相对小数据量的处理还是比较简单合适的。
+
+```objective-c
+NSArray <NSNumber *>*totalArray = @[@1, @2, @2, @3, @3, @3, @4, @4, @4, @4];
+NSArray <NSNumber *>*removeArray = @[@2, @3, @4];
+
+NSMutableIndexSet *indexSet = [NSMutableIndexSet indexSet];
+[removeArray enumerateObjectsUsingBlock:^(NSNumber * _Nonnull removeItem, NSUInteger removeIdx, BOOL * _Nonnull removeStop) {
+    [totalArray enumerateObjectsUsingBlock:^(NSNumber * _Nonnull totalItem, NSUInteger totalIdx, BOOL * _Nonnull totalStop) {
+        //匹配
+        if ([removeItem isEqualToNumber:totalItem]) {
+            [indexSet addIndex:totalIdx]; //记录index
+            *totalStop = YES; //停止遍历
+        }
+    }];
+}];
+NSLog(@"indexSet - %@", indexSet);
+
+NSMutableArray <NSNumber *>*testArray = [NSMutableArray arrayWithArray:totalArray];
+[testArray removeObjectsAtIndexes:indexSet];
+NSLog(@"removeObjectsAtIndexes - %@", testArray);
+```  
+
+
 ## 2018.1.30 WeakStrongDanceDemo
 关于
+
 ``` objective-c
 #define WeakSelf(type) __weak typeof(type)weak##type = type
 #define StrongSelf(type) __strong typeof(type)type = weak##type
 ```
+
 这两个宏在WeakStrongDance中的应用和解释。
 `##`在宏里可以连接字符串。这里就是在`block`外把`self`付给`weakself`，然后`block`内把`weakself`还给`self`。`block`外部创建`weakself`，保证了不会有引用计数加一，内部强持有，可以保证在`block`执行前`self`不会被释放。
 
