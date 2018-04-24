@@ -19,7 +19,7 @@
     [super viewDidLoad];
     
     NSArray <NSNumber *>*totalArray = @[@1, @2, @2, @3, @3, @3, @4, @4, @4, @4];
-    NSArray <NSNumber *>*removeArray = @[@2, @3, @4];
+    NSArray <NSNumber *>*removeArray = @[@2, @3, @4, @4, @2];
     NSLog(@"totalArray - %@", totalArray);
     NSLog(@"removeArray - %@", removeArray);
 
@@ -46,8 +46,8 @@
 
     [removeArray enumerateObjectsUsingBlock:^(NSNumber * _Nonnull removeItem, NSUInteger removeIdx, BOOL * _Nonnull removeStop) {
         [totalArray enumerateObjectsUsingBlock:^(NSNumber * _Nonnull totalItem, NSUInteger totalIdx, BOOL * _Nonnull totalStop) {
-            //匹配
-            if ([removeItem isEqualToNumber:totalItem]) {
+            //匹配，如果已经记录index，排除
+            if ([removeItem isEqualToNumber:totalItem] && ![indexSet containsIndex:totalIdx]) {
                 [indexSet addIndex:totalIdx]; //记录index
                 *totalStop = YES; //停止遍历
             }
