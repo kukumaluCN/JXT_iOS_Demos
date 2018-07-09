@@ -1,6 +1,52 @@
 # JXT\_iOS\_Demos
 一些iOS相关的测试Demo汇总
 
+## 2018.7.9 FindAllEnumOptions 
+对于位移运算的枚举定义：  
+
+```objective-c
+typedef NS_OPTIONS(NSUInteger, MyOptions) {
+    MyOptions_0 = 1 << 0,
+    MyOptions_1 = 1 << 1,
+    MyOptions_2 = 1 << 2,
+    MyOptions_3 = 1 << 3,
+    MyOptions_4 = 1 << 4,
+    MyOptions_5 = 1 << 5,
+    MyOptions_6 = 1 << 6,
+    MyOptions_7 = 1 << 7,
+    MyOptions_8 = 1 << 8,
+};
+```
+
+如何遍历取出一个位移类型的枚举值，例如：
+
+```objective-c
+MyOptions nowOption = MyOptions_0 | MyOptions_1 | MyOptions_2 | MyOptions_3 | MyOptions_4 | MyOptions_5 | MyOptions_6 | MyOptions_7
+```
+
+取出这个值的每一项，提供一种算法：
+
+```objective-c
+MyOptions startOption = MyOptions_0; //不变的起点
+MyOptions currentOption = MyOptions_0;
+MyOptions nowOption = MyOptions_0 | MyOptions_1 | MyOptions_2 | MyOptions_3 | MyOptions_4 | MyOptions_5 | MyOptions_6 | MyOptions_7 | 512;
+uint offset = 0;
+while (nowOption) {
+    //如果存在
+    if ((nowOption & currentOption) == currentOption) {
+        NSLog(@"- MyOptions_%d = %zd", offset, currentOption);
+
+        //删除当前的
+        nowOption ^= currentOption;
+    }
+    //继续下一个位移
+    currentOption = startOption << (++offset);
+}
+```
+
+这个算法的好处是，设定好起始值，后期维护更新枚举定义，算法基本可以不变。
+
+
 ## 2018.4.8 RemoveSingleElementFromArrayDemo
 数组执行元素删除，会删除相同的所有元素值，而不是只删除单个。   
 在某些业务场景中，只是想删除单一的一个元素，而不是同值的所有元素，类似的例如数据池的取用。  
@@ -13,8 +59,8 @@ NSArray <NSNumber *>*removeArray = @[@2, @3, @4];
 NSMutableIndexSet *indexSet = [NSMutableIndexSet indexSet];
 [removeArray enumerateObjectsUsingBlock:^(NSNumber * _Nonnull removeItem, NSUInteger removeIdx, BOOL * _Nonnull removeStop) {
     [totalArray enumerateObjectsUsingBlock:^(NSNumber * _Nonnull totalItem, NSUInteger totalIdx, BOOL * _Nonnull totalStop) {
-        //匹配
-        if ([removeItem isEqualToNumber:totalItem]) {
+        //匹配，如果已经记录index，排除
+        if ([removeItem isEqualToNumber:totalItem] && ![indexSet containsIndex:totalIdx]) {
             [indexSet addIndex:totalIdx]; //记录index
             *totalStop = YES; //停止遍历
         }
