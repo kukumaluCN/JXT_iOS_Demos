@@ -1,6 +1,10 @@
 # JXT\_iOS\_Demos
 一些iOS相关的测试Demo汇总
 
+## 2018.8.13 RandomStringForTest
+随机字符串，用于开发测试，文章详见：
+[]()
+
 ## 2018.8.9 StructForLayoutDemo
 结构体在iOS布局常数的设置中的使用，文章详见：
 [用结构体初始化大量布局常数](https://kukumalucn.github.io/blog/2018/08/09/用结构体初始化大量布局常数/)
