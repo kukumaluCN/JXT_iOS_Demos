@@ -20,7 +20,7 @@
     return [self substringToIndex:arc4random_uniform((uint32_t)(self.length))];
 }
 
-//利用CCRandomGenerateBytes实现随机字符串的生成
+//利用CCRandomGenerateBytes生成随机字符串
 + (NSString *)jxt_randomStringWithLength:(size_t)length
 {
     if (length < 1) {
