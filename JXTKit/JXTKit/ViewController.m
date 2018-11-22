@@ -97,17 +97,31 @@
     NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:self.textView.attributedText.string attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:15], NSForegroundColorAttributeName:[UIColor blackColor]}];
     
     CFAbsoluteTime time = CFAbsoluteTimeGetCurrent();
-    NSArray *ranges = [attributedString.string jxt_rangeValuesOfString:searchString];
-    NSLog(@"%f", CFAbsoluteTimeGetCurrent() - time);
-    for (NSValue *rangeValue in ranges) {
+//    NSArray *ranges = [attributedString.string jxt_rangeValuesOfString:searchString];
+//    NSLog(@"%f", CFAbsoluteTimeGetCurrent() - time);
+//    for (NSValue *rangeValue in ranges) {
+//        [attributedString addAttributes:@{
+//                                          NSForegroundColorAttributeName:[UIColor redColor],
+//                                          NSBackgroundColorAttributeName:[[UIColor blueColor] colorWithAlphaComponent:0.2],
+//                                          } range:rangeValue.rangeValue];
+//    }
+    __block NSUInteger count = 0;
+    [attributedString.string jxt_enumerateRangeOfString:searchString usingBlock:^(NSRange searchStringRange, NSUInteger idx, BOOL *stop) {
+//        if (idx == 0) {
+//            *stop = YES;
+//        }
         [attributedString addAttributes:@{
                                           NSForegroundColorAttributeName:[UIColor redColor],
                                           NSBackgroundColorAttributeName:[[UIColor blueColor] colorWithAlphaComponent:0.2],
-                                          } range:rangeValue.rangeValue];
-    }
+                                          } range:searchStringRange];
+        count ++;
+    }];
+    NSLog(@"%f", CFAbsoluteTimeGetCurrent() - time);
 
     self.textView.attributedText = attributedString;
-    self.textField.text = [NSString stringWithFormat:@"%@ - %zd", self.textField.text, ranges.count];
+//    self.textField.text = [NSString stringWithFormat:@"%@ - %zd", self.textField.text, ranges.count];
+    self.textField.text = [NSString stringWithFormat:@"%@ - %zd", self.textField.text, count];
+
 }
 
 
