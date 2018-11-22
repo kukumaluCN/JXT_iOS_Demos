@@ -36,6 +36,8 @@
     self.textField = textField;
     
 //    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textFieldTextDidChangeNotification) name:UITextFieldTextDidChangeNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardDidShowNotification:) name:UIKeyboardDidShowNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardDidHideNotification:) name:UIKeyboardDidHideNotification object:nil];
     
     UIButton *searchButton = [UIButton buttonWithType:UIButtonTypeSystem];
     searchButton.frame = CGRectMake(CGRectGetMaxX(textField.frame)+5, 0, bgView.bounds.size.width-CGRectGetMaxX(textField.frame)-5, 50);
@@ -45,10 +47,11 @@
     [searchButton addTarget:self action:@selector(searchButtonAction:) forControlEvents:UIControlEventTouchUpInside];
     [bgView addSubview:searchButton];
     
-    UITextView *textView = [[UITextView alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(bgView.frame), self.view.bounds.size.width, self.view.bounds.size.height-20)];
+    UITextView *textView = [[UITextView alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(bgView.frame), self.view.bounds.size.width, self.view.bounds.size.height-CGRectGetMaxY(bgView.frame))];
     textView.backgroundColor = [UIColor whiteColor];
     textView.font = [UIFont systemFontOfSize:15];
     textView.editable = NO;
+    textView.keyboardDismissMode = UIScrollViewKeyboardDismissModeInteractive;
     [self.view addSubview:textView];
     self.textView = textView;
 
@@ -130,6 +133,21 @@
 - (void)textFieldTextDidChangeNotification
 {
     [self highlightedSearchString:self.textField.text];
+}
+
+- (void)keyboardDidShowNotification:(NSNotification *)notification
+{
+    // 键盘的frame
+    CGRect keyboardRect = [notification.userInfo[UIKeyboardFrameEndUserInfoKey] CGRectValue];
+    
+    self.textView.contentInset = UIEdgeInsetsMake(0, 0, keyboardRect.size.height, 0);
+    self.textView.scrollIndicatorInsets = UIEdgeInsetsMake(0, 0, keyboardRect.size.height, 0);
+}
+
+- (void)keyboardDidHideNotification:(NSNotification *)notification
+{
+    self.textView.contentInset = UIEdgeInsetsZero;
+    self.textView.scrollIndicatorInsets = UIEdgeInsetsZero;
 }
 
 
