@@ -1,6 +1,9 @@
 # JXT\_iOS\_Demos
 一些iOS相关的测试Demo汇总
 
+## 2018.11.22 JXTKit-jxt_rangeValuesOfString:
+[]()
+
 ## 2018.8.13 RandomStringForTest
 随机字符串，用于开发测试，文章详见：
 [随机内容字符串](https://kukumalucn.github.io/blog/2018/08/13/随机内容字符串/)
