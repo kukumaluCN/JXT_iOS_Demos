@@ -2,7 +2,8 @@
 一些iOS相关的测试Demo汇总
 
 ## 2018.11.22 JXTKit-jxt_rangeValuesOfString:
-[]()
+> 博文： 
+[https://kukumalucn.github.io/blog/2018/11/22/一种字符串关键字检索高亮的简易实现/](https://kukumalucn.github.io/blog/2018/11/22/一种字符串关键字检索高亮的简易实现/)
 
 ## 2018.8.13 RandomStringForTest
 随机字符串，用于开发测试，文章详见：
